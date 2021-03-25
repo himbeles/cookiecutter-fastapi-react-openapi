@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "frontend/",
+			"problemMatcher": [],
+			"label": "npm: start - frontent",
+			"detail": "react-scripts start"
+		},
+		{
+			"type": "npm",
+			"script": "compile-api",
+			"path": "frontend/",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "compile-api",
+			"detail": "npx @openapitools/openapi-generator-cli generate -i ../openapi.json -g typescript-axios --additional-properties=supportsES6=true -o ./src/api"
+		}
+	]
+}
